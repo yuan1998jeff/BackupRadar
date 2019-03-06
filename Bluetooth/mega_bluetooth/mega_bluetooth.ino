@@ -1,8 +1,10 @@
 #include <SoftwareSerial.h>
 
-// To run on Arduino UNO
-SoftwareSerial BTSerial(0, 1); // RX | TX
+// To run on Arduino Mega
+SoftwareSerial BTSerial(19, 18); // RX | TX
+
 char c =' ';
+
 void setup() {
     // put your setup code here, to run once:
     Serial.begin(9600);
