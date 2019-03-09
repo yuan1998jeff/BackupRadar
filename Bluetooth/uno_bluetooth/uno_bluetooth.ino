@@ -1,8 +1,10 @@
 #include <SoftwareSerial.h>
 
-// To run on Arduino UNO
-SoftwareSerial BTSerial(0, 1); // RX | TX
+// To run on Arduino Uno (Master)
+SoftwareSerial BTSerial(0, 1); // RX | 
+
 char c ='Z';
+
 void setup() {
     // put your setup code here, to run once:
     Serial.begin(9600);
@@ -10,11 +12,10 @@ void setup() {
 
     BTSerial.begin(9600);   
     Serial.println("BTSerial started at 9600");
-
 }
-//
+
 void loop() {
-    BTSerial.write(c);
+    BTSerial.println("HEY!");
     delay(1000);
     
     

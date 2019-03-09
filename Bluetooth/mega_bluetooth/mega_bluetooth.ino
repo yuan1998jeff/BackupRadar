@@ -1,9 +1,11 @@
 #include <SoftwareSerial.h>
 
 // To run on Arduino Mega
-SoftwareSerial BTSerial(6, 7); // RX | TX
+SoftwareSerial BTSerial(19, 18); // RX | TX
+
 char c =' ';
-void setup() {    
+
+void setup() {
     // put your setup code here, to run once:
     Serial.begin(9600);
     Serial.println("Arduino UNO with HC-06 is ready");
